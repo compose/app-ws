@@ -68,6 +68,8 @@ You can find some *incomplete* docs over here: https://megatron-docs.compose.io/
 
 As a general rule, you should use idiomatic Rails to solve these problems. This **could** mean reorganizing things and **probably** means adding routes, controllers and models as you feel is necessary.
 
+Use the tools, gems and libraries you enjoy using.
+
 #### Test: Specs need to pass
 
 We've added a few failing specs in the app, please fix them and make them green.
