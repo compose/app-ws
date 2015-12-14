@@ -1,3 +1,5 @@
-= megatron_layout primary_nav: 'deployments' do
-  - javascripts do
+= render partial: 'layouts/nav'
+
+= megatron_layout custom_nav: true
+  - javascripts
     = javascript_include_tag "application", "data-turbolinks-track" => true

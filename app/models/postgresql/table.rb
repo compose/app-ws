@@ -5,6 +5,5 @@ class PostgreSQL::Table
   attribute :deployment, PostgreSQL::Deployment
 
   attribute :name, String
-  attribute :rows_count, Integer # Estimated, since last VACUUM
 
 end

@@ -12,12 +12,12 @@ class PostgreSQL::Deployment < Deployment
 
   def databases
     client.exec(<<-eos
-      SELECT pg_database.datname, pg_database_size(pg_database.datname) AS size
+      SELECT pg_database.datname
       FROM pg_database
       WHERE datistemplate = false;
     eos
     ).select {|row| row['datname'] != 'postgres'}.map do |row|
-      PostgreSQL::Database.new(name: row['datname'], size: row['size'], deployment: self)
+      PostgreSQL::Database.new(name: row['datname'], deployment: self)
     end
   end
 

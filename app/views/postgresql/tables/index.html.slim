@@ -1,14 +1,14 @@
-- page_header
-  h2
-    - breadcrumbs do |b|
-      = b.crumb current_deployment.name, postgresql_databases_path
-      = b.crumb current_database.name, postgresql_database_tables_path
+= render partial: 'postgresql/databases/header'
+= render partial: 'postgresql/databases/nav'
 
 - main_header 'Tables'
 
 - main
   .wide
     .box-table
-      - current_database.tables.each do |table|
+      .table-head
+        .table-row
+          .table-cell name
+      - tables.each do |table|
         .table-row
           .table-cell = table.name

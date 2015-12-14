@@ -1,11 +1,12 @@
-- page_header current_deployment.name
+= render partial: 'postgresql/deployments/header'
+= render partial: 'postgresql/deployments/nav'
 
 - main_header 'Databases'
 
 - main
   .wide
     .box-table
-      - current_deployment.databases.each do |database|
+      - databases.each do |database|
         .table-row
           .table-cell
             = link_to database.name, postgresql_database_tables_path(database_name: database.name)
