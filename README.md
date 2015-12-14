@@ -70,6 +70,10 @@ As a general rule, you should use idiomatic Rails to solve these problems. This 
 
 Use the tools, gems and libraries you enjoy using.
 
+#### Aesthetics
+
+Your presentation should be something you're proud of. The user-experience and aesthetic aspects should be well considered.
+
 #### Test: Specs need to pass
 
 We've added a few failing specs in the app, please fix them and make them green.
