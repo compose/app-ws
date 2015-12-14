@@ -2,8 +2,6 @@
 
 Work sample to be completed to apply for the application developer position at Compose.
 
-**Note: this app is purposely broken, you'll have to "repair" it using idiomatic Rails ways.**
-
 ## Context
 
 At Compose, we have multiple apps being served on the app.compose.io domain. These apps all use the same basic CSS and JavaScript through a UI framework we built called Megatron.
@@ -84,7 +82,7 @@ We've added a few failing specs in the app, please fix them and make them green.
 - Show a deployment's current queries
 - It should be live updating
 
-#### Bug fix: Namespace table names with their schema
+#### Bug fix: Tables with the same name in different schemas
 
 Customers complained some tables had the same name but were using different schemas. Navigating to these tables did not work and threw an error like:
 
