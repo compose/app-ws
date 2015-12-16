@@ -78,6 +78,8 @@ Your presentation should be something you're proud of. The user-experience and a
 
 We've added a few failing specs in the app, please fix them and make them green.
 
+This means writing code in the application, the specs are correct but the code to make them pass is not yet implemented.
+
 #### Feature: `DESCRIBE`-like for PostgreSQL tables
 
 - Clicking on a table's name should bring up a page with all columns and their data types for the selected table. This should actually query the PostgreSQL deployment for the information, no fake data.
