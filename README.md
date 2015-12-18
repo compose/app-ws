@@ -74,6 +74,8 @@ Use the tools, gems and libraries you enjoy using.
 
 Your presentation should be something you're proud of. The user-experience and aesthetic aspects should be well considered.
 
+We have no expectations toward how something should look, but we do expect it to look good and feel natural.
+
 #### Test: Specs need to pass
 
 We've added a few failing specs in the app, please fix them and make them green.
@@ -90,9 +92,11 @@ This means writing code in the application, the specs are correct but the code t
 - Show a deployment's current queries
 - It should be live updating
 
-#### Bug fix: Tables with the same name in different schemas
+#### Feature: Tables with the same name in different schemas
 
-Customers complained some tables had the same name but were using different schemas. Navigating to these tables did not work and threw an error like:
+In PostgreSQL, tables might have the same name but belong to different schemas.
+
+Navigating to these tables, with the current implementation, does not work and raises an exception like:
 
 ```
 ERROR: relation "table_name" does not exist
