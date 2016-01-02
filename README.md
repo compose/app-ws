@@ -56,7 +56,7 @@ I'm sure you can figure that out from the `Procfile` / server logs.
 
 #### `gem 'megatron'`
 
-This is our own UI kit / framework for consistent styles across all our apps. The source is here: [compose-ui/megatron.rb](/compose-ui/megatron.rb)
+This is our own UI kit / framework for consistent styles across all our apps. The source is here: [compose-ui/megatron.rb](https://github.com/compose-ui/megatron.rb)
 
 You can find some *incomplete* docs over here: https://megatron-docs.compose.io/
 
