@@ -66,7 +66,7 @@ You can find some *incomplete* docs over here: https://megatron-docs.compose.io/
 
 ## What's expected of you
 
-As a general rule, you should use idiomatic Rails to solve these problems. This **could** mean reorganizing things and **probably** means adding routes, controllers and models as you feel is necessary.
+As a general rule, you should use idiomatic Rails to solve these problems. This **could** mean reorganizing things and **probably** means adding routes, controllers, models, and specs as you feel is necessary.
 
 Use the tools, gems and libraries you enjoy using.
 
@@ -78,9 +78,7 @@ We have no expectations toward how something should look, but we do expect it to
 
 #### Test: Specs need to pass
 
-We've added a few failing specs in the app, please fix them and make them green.
-
-This means writing code in the application, the specs are correct but the code to make them pass is not yet implemented.
+We've noticed an issue with the app, and added some failing specs accordingly. Please fix the issue so the specs are green.
 
 #### Feature: `DESCRIBE`-like for PostgreSQL tables
 
